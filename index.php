@@ -125,6 +125,86 @@
         (g)Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -<br>
         (h)Mention of any earlier engagements with IITKGP -<br>
         : <input type="text" name="Philanthropic"></label><br>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h4>
+                            <a href="javascript:void(0)" class="add-more-form float-end btn btn-primary">ADD MORE</a>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+
+                        <!-- <form action="code.php" method="POST"> -->
+                        
+                            <div class="main-form mt-3 border-bottom">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group mb-2">
+                                            <label for="">Name</label>
+                                            <input type="text" name="name1[]" class="form-control" required placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group mb-2">
+                                            <label for="">Phone Number</label>
+                                            <input type="text" name="phone1[]" class="form-control" required placeholder="Enter Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="paste-new-forms"></div>
+
+                            <!-- <button type="submit" name="save_multiple_data" class="btn btn-primary">Save Multiple Data</button> -->
+                        <!-- </form> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(document).on('click', '.remove-btn', function () {
+                $(this).closest('.main-form').remove();
+            });
+            
+            $(document).on('click', '.add-more-form', function () {
+                $('.paste-new-forms').append('<div class="main-form mt-3 border-bottom">\
+                                <div class="row">\
+                                    <div class="col-md-4">\
+                                        <div class="form-group mb-2">\
+                                            <label for="">Name</label>\
+                                            <input type="text" name="name1[]" class="form-control" required placeholder="Enter Name">\
+                                        </div>\
+                                    </div>\
+                                    <div class="col-md-8">\
+                                        <div class="form-group mb-2">\
+                                            <label for="">Phone Number</label>\
+                                            <input type="text" name="phone1[]" class="form-control" required placeholder="Enter Phone Number">\
+                                        </div>\
+                                    </div>\
+                                    <div class="col-md-4">\
+                                        <div class="form-group mb-2">\
+                                            <br>\
+                                            <button type="button" class="remove-btn btn btn-danger">Remove</button>\
+                                        </div>\
+                                    </div>\
+                                </div>\
+                            </div>');
+            });
+
+        });
+    </script>
+
       
 
 
