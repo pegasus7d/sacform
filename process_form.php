@@ -40,13 +40,23 @@ if(isset($_POST['name'])&& isset($_POST['position']) && isset($_POST['email']) &
   VALUES ('$name', '$position','$email','$city','$connected','$contact','$suggestionStudent','$suggestionFaculty','$almaDep','$almaIns','$almaHall','$almaEntrepreneurship','$suggestionWomenEdu','$InstituteRankingImprovement')";
  $name = $_POST['name1'];
  $phone = $_POST['phone1'];
+ $email = $_POST['email1'];
+ $designation = $_POST['designation1'];
+ $location = $_POST['location1'];
+ $interest = $_POST['interest1'];//linkage
+ $linkage = $_POST['linkage1'];
  foreach($name as $index => $names)
     {
         $s_name = $names;
         $s_phone = $phone[$index];
+        $s_email = $email[$index];
+        $s_designation = $designation[$index];
+        $s_location = $location[$index];
+        $s_interest = $interest[$index];
+        $s_linkage = $linkage[$index];
         // $s_otherfiled = $empid[$index];
 
-        $query = "INSERT INTO demo (name,phone) VALUES ('$s_name','$s_phone')";
+        $query = "INSERT INTO demo (name,phone,email,designation,location,interest,linkage) VALUES ('$s_name','$s_phone','$s_email','$s_designation','$s_location','$s_interest','$s_linkage')";
         $query_run = mysqli_query($conn, $query);
     } 
 
