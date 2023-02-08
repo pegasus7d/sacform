@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2023 at 09:32 PM
+-- Generation Time: Feb 08, 2023 at 06:48 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -30,15 +30,22 @@ SET time_zone = "+00:00";
 CREATE TABLE `demo` (
   `id` int(11) NOT NULL,
   `name` varchar(191) NOT NULL,
-  `phone` varchar(191) NOT NULL
+  `phone` varchar(191) NOT NULL,
+  `email` varchar(300) NOT NULL,
+  `designation` varchar(300) NOT NULL,
+  `location` varchar(300) NOT NULL,
+  `interest` varchar(300) NOT NULL,
+  `linkage` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `demo`
 --
 
-INSERT INTO `demo` (`id`, `name`, `phone`) VALUES
-(1, 'abc', '1234567890');
+INSERT INTO `demo` (`id`, `name`, `phone`, `email`, `designation`, `location`, `interest`, `linkage`) VALUES
+(1, 'abc', '1234567890', '', '', '', '', ''),
+(2, 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde'),
+(3, 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde');
 
 -- --------------------------------------------------------
 
@@ -73,7 +80,8 @@ INSERT INTO `users` (`name`, `position`, `email`, `city`, `connected`, `contact`
 ('Array', 'abc', 'abc@gmail.com', 'abc', 0, '1234', 'abc', 'abc', 'abc', 'abc', 'abc', 'abc', 'abc', 'abc'),
 ('xyz', 'xyz', 'xyz@gmail.com', 'xyz', 0, '0123456789', 'xyz', 'xyz', 'xyz', 'xyz', 'xyz', 'xyz', 'xyz', 'xyz'),
 ('deb', 'aa', 'asfd@gmail.com', 'as', 0, '1234', 'acx', 'scxa', 'vds', 'bd', 'db', 'vs', 'vd', 'bd'),
-('lkjh', 'abc', 'abcxyz@gmail.com', 'a', 0, '0123456789', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a');
+('lkjh', 'abc', 'abcxyz@gmail.com', 'a', 0, '0123456789', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'),
+('pusp', 'abcsde', 'abcsde@gmail.com', 'abcsde', 0, '0123456789', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde');
 
 --
 -- Indexes for dumped tables
@@ -93,7 +101,7 @@ ALTER TABLE `demo`
 -- AUTO_INCREMENT for table `demo`
 --
 ALTER TABLE `demo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
