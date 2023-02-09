@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 09, 2023 at 04:08 PM
+-- Generation Time: Feb 09, 2023 at 05:47 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -45,11 +45,7 @@ CREATE TABLE `demo` (
 INSERT INTO `demo` (`id`, `name`, `phone`, `email`, `designation`, `location`, `interest`, `linkage`) VALUES
 (1, 'abc', '1234567890', '', '', '', '', ''),
 (2, 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde'),
-(3, 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde'),
-(4, 'cdef', 'cdef', '', '', '', '', ''),
-(5, '', '', '', '', '', '', ''),
-(6, '', '', '', '', '', '', ''),
-(7, '', '', '', '', '', '', '');
+(3, 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde', 'abcsde');
 
 -- --------------------------------------------------------
 
@@ -115,13 +111,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `demo`
 --
 ALTER TABLE `demo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
