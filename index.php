@@ -123,13 +123,13 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-2">
                                             <label for="">Name</label>
-                                            <input type="text" name="name1[]" class="form-control" required placeholder="Enter Name">
+                                            <input type="text" name="name1[]" class="form-control"  placeholder="Enter Name">
                                         </div>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group mb-2">
                                             <label for="">Phone Number</label>
-                                            <input type="text" name="phone1[]" class="form-control" required placeholder="Enter Phone Number">
+                                            <input type="text" name="phone1[]" class="form-control"  placeholder="Enter Phone Number">
                                         </div>
                                     </div>
                                 </div>

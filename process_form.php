@@ -34,7 +34,7 @@ if(isset($_POST['name'])&& isset($_POST['position']) && isset($_POST['email']) &
   $almaEntrepreneurship=$_POST['almaEntrepreneurship'];
   $suggestionWomenEdu=$_POST['suggestionWomenEdu'];
   $InstituteRankingImprovement=$_POST['InstituteRankingImprovement'];
- 
+  
   
   $sql = "INSERT INTO users (name,position,email,city,connected,contact,suggestionStudent,suggestionFaculty,almaDep,almaIns,almaHall,almaEntrepreneurship,suggestionWomenEdu,InstituteRankingImprovement)
   VALUES ('$name', '$position','$email','$city','$connected','$contact','$suggestionStudent','$suggestionFaculty','$almaDep','$almaIns','$almaHall','$almaEntrepreneurship','$suggestionWomenEdu','$InstituteRankingImprovement')";
