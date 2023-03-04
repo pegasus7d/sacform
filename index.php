@@ -95,7 +95,98 @@
     <label>16. Your Suggestion regarding improvement of Institute Ranking: <input type="text" name="InstituteRankingImprovement"></label><br>
       
         <div class="container">
-        17(a) Please help Office of Alumni Affairs IIT Kharagpur  with suggestions of enthusiastic Alumni who may be connected with the OAA@IITKGP, as per your thinking, for getting associated with the institute for different engagement options made available now. 
+        17 Please help Office of Alumni Affairs IIT Kharagpur  with suggestions of enthusiastic Alumni who may be connected with the OAA@IITKGP, as per your thinking, for getting associated with the institute for different engagement options made available now. 
+      IIT KGP Alumni <br>
+      (a) Full Name-<br>
+      (b) Contact No-<br>
+      (c) Email ID-<br>
+      (d) Designation / Previous Designation-<br>
+      (e)Location -<br>
+      (f) Area of interest / fascination / hobby -<br>
+      (g)Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -<br>
+      (h)Mention of any earlier engagements with IITKGP -:
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h4> Enter Alumni Details
+                            <a href="javascript:void(0)" class="add-more-form float-end btn btn-primary">ADD MORE</a>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+
+                        <!-- <form action="code.php" method="POST"> -->
+                        
+                            <div class="main-form mt-3 border-bottom">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group mb-2">
+                                            <label for="">Name</label>
+                                            <input type="text" name="name1[]" class="form-control"  placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group mb-2">
+                                            <label for="">Phone Number</label>
+                                            <input type="text" name="phone1[]" class="form-control"  placeholder="Enter Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group mb-2">
+                                            <label for="">Email</label>
+                                            <input type="text" name="email1[]" class="form-control"  placeholder="Enter Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group mb-2">
+                                            <label for="">Designation</label>
+                                            <input type="text" name="designation1[]" class="form-control"  placeholder="Enter Designation">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group mb-2">
+                                            <label for=""><nobr>Location</nobr></label>
+                                            <input type="text" name="location1[]" class="form-control"  placeholder="Enter Location">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group mb-2">
+                                            <label for="">Area of interest</label>
+                                            <input type="text" name="interest1[]" class="form-control"  placeholder="Enter Area of Interest">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group mb-2">
+                                            <text>Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -
+(h)Mention of any earlier engagements with IITKGP</text> 
+                                            <label for="" ></label>
+                                            <input type="text" style="height:50%" name="linkage1[]" class="form-control"  placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="paste-new-forms"></div>
+
+                            <!-- <button type="submit" name="save_multiple_data" class="btn btn-primary">Save Multiple Data</button> -->
+                        <!-- </form> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        18. Please help Office of Alumni Affairs IIT Kharagpur  with suggestions of enthusiastic Alumni who may be connected with the OAA@IITKGP, as per your thinking, for getting associated with the institute for different engagement options made available now. 
       IIT KGP Alumni <br>
       (a) Full Name-<br>
       (b) Contact No-<br>
