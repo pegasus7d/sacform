@@ -236,7 +236,7 @@
 </label> <br><br>
     <label>
         18. Please help Office of Alumni Affairs IIT Kharagpur  with suggestions of enthusiastic Alumni who may be connected with the OAA@IITKGP, as per your thinking, for getting associated with the institute for different engagement options made available now. 
-      IIT KGP Alumni <br>
+      IIT Alumni(Other Than Kgp) & (Other Philanthropic Individuals) <br>
       (a) Full Name<br>
       (b) Contact No<br>
       (c) Email ID<br>
