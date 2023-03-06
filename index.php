@@ -8,17 +8,19 @@
 <!--FONT AWESOME--><link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="form.css">
 </head>
 <style>
+
+    html, body {margin: 0; height: 100%; overflow-x: hidden;}
     form {
       padding: 20px;
       background-color: #cde7fe;
@@ -27,14 +29,15 @@
       margin: auto;
       width: 1200px;
       /* align-items: center; */
+      didisplay: flex;
     }
   
     label {
-      display: block;
+      display: flexbox;
       margin-bottom: 10px;
       font-size: 18px;
       margin: auto;
-      padding: 0 150 ;
+      padding: 0 5px ;
     }
   
     input[type="text"],
@@ -66,6 +69,45 @@
   font-size: 15px;
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 500px) and (max-width:950px) {
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  label, input, textarea {
+    width: 45%;
+    
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width:500px) {
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  label, input, textarea {
+    width: 25%;
+    
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+/* @media screen and (min-width: 600px) and (max-width:950px) {
+
+    form{
+        margin-right: 2rem;
+    }
+} */
   </style>
 
 <div class="header">
@@ -74,13 +116,20 @@
 </div>
   
   <form action="process_form.php" method="post">
-    <label>1. Name: <input type="text" name="name"></label><br>
-    <label>2. Present Position & Organization (in case you are retired, Please provide previous Position held and Organization): <input type="text" name="position"></label><br>
-    <label>3. Email: <input type="email" name="email"></label><br>
-    <label>4. Current place of residence (mention the zip code & country also): <input type="text" name="city"></label><br>
-    <label>5. You are connected with : <input type="text" name="connected"></label><br>
+    <label>1. Name: <input type="text" name="name"  required></label><br>
+    <label>2. Present Position & Organization (in case you are retired, Please provide previous Position held and Organization): <input type="text" name="position" rows="4" cols="50" required></label><br>
+    <label>3. Email: <input type="email" name="email" rows="4" cols="50" required ></label><br>
+    <label>4. Current place of residence (mention the zip code & country also): <input type="text" name="city" required></label><br>
+    <label>5. You are connected with (Choose below): <br>
+        a. Local Chapter at your location <br>
+        b. IIT Kharagpur Alumni Foundation USA <br>
+        c. IIT Kharagpur Foundation India <br>
+        d. PAN IIT Alumni India <br>
+        e. PAN IIT USA <br>
+        f. Office of Alumni Affairs @IITKGP <br>
+        <input type="text" name="connected"></label><br>
     <label>6. Contact Number (preferably WhatsApp Number, with Country Code)
-      : <input type="number" name="contact"></label><br>
+      : <input type="number" name="contact"></label><br><br>
     <label>7. Your suggestion(s) for attracting top class students towards IIT-KGP in case of Indian students : <input type="text" name="suggestionStudent"></label><br>
     <label>8. Your suggestion(s) for attracting top class faculty members at IIT-KGP in case of  Indian faculty members: <input type="text" name="suggestionFaculty"></label><br>
     <label>9. Please suggest ways to celebrate the Platinum Jubilee 
@@ -94,7 +143,7 @@
     <label>15. Suggestion for improvement of women education and corresponding infrastructure at IIT-KGP: <input type="text" name="suggestionWomenEdu"></label><br>
     <label>16. Your Suggestion regarding improvement of Institute Ranking: <input type="text" name="InstituteRankingImprovement"></label><br>
       
-        <div class="container">
+        <label>
         17 Please help Office of Alumni Affairs IIT Kharagpur  with suggestions of enthusiastic Alumni who may be connected with the OAA@IITKGP, as per your thinking, for getting associated with the institute for different engagement options made available now. 
       IIT KGP Alumni <br>
       (a) Full Name-<br>
@@ -167,7 +216,7 @@
                                             <text>Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -
 (h)Mention of any earlier engagements with IITKGP</text> 
                                             <label for="" ></label>
-                                            <input type="text" style="height:50%" name="linkage1[]" class="form-control"  placeholder="">
+                                            <input type="text" style="height:20%" name="linkage1[]" class="form-control"  placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -184,16 +233,16 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
+</label> <br><br>
+    <label>
         18. Please help Office of Alumni Affairs IIT Kharagpur  with suggestions of enthusiastic Alumni who may be connected with the OAA@IITKGP, as per your thinking, for getting associated with the institute for different engagement options made available now. 
       IIT KGP Alumni <br>
-      (a) Full Name-<br>
-      (b) Contact No-<br>
-      (c) Email ID-<br>
-      (d) Designation / Previous Designation-<br>
-      (e)Location -<br>
-      (f) Area of interest / fascination / hobby -<br>
+      (a) Full Name<br>
+      (b) Contact No<br>
+      (c) Email ID<br>
+      (d) Designation / Previous Designation<br>
+      (e)Location <br>
+      (f) Area of interest / fascination / hobby <br>
       (g)Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -<br>
       (h)Mention of any earlier engagements with IITKGP -:
         <div class="row">
@@ -258,7 +307,7 @@
                                             <text>Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -
 (h)Mention of any earlier engagements with IITKGP</text> 
                                             <label for="" ></label>
-                                            <input type="text" style="height:50%" name="linkage1[]" class="form-control"  placeholder="">
+                                            <input type="text" style="height:20%" name="linkage1[]" class="form-control"  placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +324,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </label>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -336,7 +385,7 @@
                                         <div class="form-group mb-2">\
                                             <text>Probable linkage(s) with the institute for (a) Institute development, (b) Department development, (c) Campus development, (d) Hall development, (e) Gymkhana / Sports Development, (f) New Medical Infrastructure Development, (g) Building the Brand Image of IITKGP -(h)Mention of any earlier engagements with IITKGP</text>\
                                             <label for="" ></label>\
-                                            <input type="text" style="height:50%" name="linkage1[]" class="form-control"  placeholder="">\
+                                            <input type="text" style="height:20%" name="linkage1[]" class="form-control"  placeholder="">\
                                         </div>\
                                     </div>\
                                 </div>\
@@ -357,7 +406,11 @@
 
         
                    
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" style="
+    width: fit-content;
+    display: block;
+    margin: 1rem;"
+>
 
   </form>
   
